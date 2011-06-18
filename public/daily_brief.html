@@ -13,6 +13,10 @@
             text-decoration: none;
         }
 
+        h1{
+            height: 1000px;
+        }
+
         #container{
             margin-left: auto;
             margin-right: auto;
@@ -20,7 +24,15 @@
         }
         
         #footer{
+            background:red;
             font-size: 11px;
+
+            display: block;
+            bottom: 0;
+            left:0;
+            position: fixed;
+            width: 100%;
+            z-index: 100%;
         }
     </style>
     <body>
@@ -28,10 +40,10 @@
             <h1>
                 Daily Brief
             </h1>
-            <div id="footer">
-                Produced for Hack for Change at the Change.org headquarters
+        </div>
+         <div id="footer">
+            Produced for Hack for Change at the Change.org headquarters
             </div>
-       </div>
        <!-- adding jQuery and jQuery UI -->
        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
