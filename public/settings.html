@@ -8,27 +8,29 @@
         body {
             font-family: helvetica, arial, clean, sans-serif;
         }
+        .clearfix:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
 
         #container{
             margin-left: auto;
             margin-right: auto;
             width: 920px;
         }
-        #header{
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
         #topics{
             font-size: 16px;
+            clear: auto;
         }
-
-        #topics_title{
-            font-size: 18px;
-        }
-
         ul.list{
             /*list-style-type:square;*/
             list-style-type:none;
+            float: left;
+            width: 150px;
+            margin: 10px 10px 0 0;
         }
         
         #delivery{
@@ -40,24 +42,31 @@
     </style>
     <body>
         <div id="container">
-            <div id="header">
+            <h1>
                 Settings
-            </div>
-            <div id="topics">
-                <div id ="topics_title">
-                <strong>Brief me on:</strong>
-                </div>
+            </h1>
+            <div id="topics" class="clearfix">
+                <h2>
+                Brief me on
+                </h2>
                 <ul class="list">
                     <li>Politics</li>
                     <li>The Environment</li>
                     <li>Crime</li>
                     <li>City Blight</li>
                     <li>Transportation</li>
-                <ul>
+                </ul>
+                <ul class="list">
+                    <li>Congress</li>
+                    <li>State Budget</li>
+                    <li>My representatives</li>
+                    <li>Employment</li>
+                    <li>Outsourcing</li>
+                </ul>
             </div>
-            <div id="delivery">
-                <strong>Deliver my brief</strong>
-            </div>
+            <h2>
+                Deliver my brief
+            </h2>
             <div id="footer">
                 Produced for Hack for Change at the Change.org headquarters
             </div>
