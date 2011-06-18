@@ -6,7 +6,6 @@
     </head>
     <style>
         body {
-            font-size: 20px;
             font-family: helvetica, arial, clean, sans-serif;
         }
 
@@ -16,20 +15,27 @@
             width: 920px;
         }
         #header{
-            height: 50px;
-            background: red;
+            font-size: 24px;
+            margin-bottom: 20px;
         }
         #topics{
-            height:50px;
-            background: blue;
+            font-size: 16px;
         }
+
+        #topics_title{
+            font-size: 18px;
+        }
+
+        ul.list{
+            /*list-style-type:square;*/
+            list-style-type:none;
+        }
+        
         #delivery{
-            height:50px;
-            background: green;
+            font-size: 18px;
         }
         #footer{
-            height:50px;
-            background: #CCCCCC;
+            font-size: 11px;
         }
     </style>
     <body>
@@ -38,13 +44,22 @@
                 Settings
             </div>
             <div id="topics">
-                Brief me on
+                <div id ="topics_title">
+                <strong>Brief me on:</strong>
+                </div>
+                <ul class="list">
+                    <li>Politics</li>
+                    <li>The Environment</li>
+                    <li>Crime</li>
+                    <li>City Blight</li>
+                    <li>Transportation</li>
+                <ul>
             </div>
             <div id="delivery">
-                Deliver my brief
+                <strong>Deliver my brief</strong>
             </div>
             <div id="footer">
-                Hack for Change
+                Produced for Hack for Change at the Change.org headquarters
             </div>
        </div>
     </body>
