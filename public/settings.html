@@ -25,17 +25,27 @@
             font-size: 16px;
             clear: auto;
         }
-        ul.list{
-            /*list-style-type:square;*/
+
+        ul{
             list-style-type:none;
+        }
+        
+        ul.topic_list{
+            /*list-style-type:square;*/
             float: left;
             width: 150px;
             margin: 10px 10px 0 0;
         }
         
         #delivery{
-            font-size: 18px;
+            
         }
+
+        ul.brief_list li{
+            display: inline;
+            padding: 0px 3px 0px 3px;
+        }
+        
         #footer{
             font-size: 11px;
         }
@@ -49,14 +59,14 @@
                 <h2>
                 Brief me on
                 </h2>
-                <ul class="list">
+                <ul class="topic_list">
                     <li>Politics</li>
                     <li>The Environment</li>
                     <li>Crime</li>
                     <li>City Blight</li>
                     <li>Transportation</li>
                 </ul>
-                <ul class="list">
+                <ul class="topic_list">
                     <li>Congress</li>
                     <li>State Budget</li>
                     <li>My representatives</li>
@@ -64,9 +74,16 @@
                     <li>Outsourcing</li>
                 </ul>
             </div>
-            <h2>
-                Deliver my brief
-            </h2>
+            <div id="delivery">
+                <h2>
+                    Deliver my brief
+                </h2>
+                <ul class="brief_list">
+                    <li>SMS</li>
+                    <li>Email</li>
+                    <li>Web</li>
+               </ul>
+            </div>
             <div id="footer">
                 Produced for Hack for Change at the Change.org headquarters
             </div>
