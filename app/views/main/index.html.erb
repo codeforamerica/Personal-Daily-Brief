@@ -135,6 +135,27 @@
         			}
         		});
         	});
+        	$(function() {
+                $( "#manilla_opening" ).click(function(){
+                    $( "#brief" ).switchClass( "brief_open", "brief_closed", 1000 );
+            		$( "#manilla_opening" ).switchClass( "manilla_closed_bottom", "manilla_open_bottom", 1000 );
+            		$( "#manilla_flap" ).switchClass( "manilla_closed_bottom", "manilla_open_bottom", 1000 );
+            		$( "#manilla" ).switchClass( "manilla_closed", "manilla_open", 1000 );
+            		$("#manilla_opening").attr('id', 'manilla_closing');
+            	    return false;
+            	});
+            });
+            $(function() {
+                $( "#manilla_closing" ).click(function(){
+                    alert('hi');
+                    $( "#brief" ).switchClass( "brief_open", "brief_closed", 1000 );
+            		$( "#manilla_opening" ).switchClass( "manilla_closed_bottom", "manilla_open_bottom", 1000 );
+            		$( "#manilla_flap" ).switchClass( "manilla_closed_bottom", "manilla_open_bottom", 1000 );
+            		$( "#manilla" ).switchClass( "manilla_closed", "manilla_open", 1000 );
+            		$("#manilla_closing").attr('id', 'manilla_opening');
+            	    return false;
+            	});
+            });
         </script>
     </body>
 </html>

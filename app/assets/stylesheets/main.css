@@ -175,7 +175,7 @@ ul.brief_list li{
     padding-top: 3px;
 }
 
-#manilla_opening, #manilla_flap {
+#manilla_opening, #manilla_closing, #manilla_flap {
 	background-repeat: no-repeat;
 	display: block;
 	left:0;
@@ -184,7 +184,7 @@ ul.brief_list li{
 	width: 960px;
 	left: 50%;
 }
-#manilla_opening {
+#manilla_opening, #manilla_closing {
 	background-image: url('manilla_fs2.png');
 	height: 89px;
 	z-index: 1;
