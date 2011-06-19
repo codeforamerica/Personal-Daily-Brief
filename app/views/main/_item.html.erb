@@ -1,0 +1,9 @@
+<div class="event">
+  <div class="event_image"></div>
+  <h3 class="goudy event_info">
+    <%= item.title %>
+    <%= render :partial => "topic", :collection => item.topics %>
+    <span id="urgency_tag"><%= distance_of_time_in_words(Time.now, item.occurs_at) %> from now</span>
+    <span class="map"></span>
+  </h3>
+</div>

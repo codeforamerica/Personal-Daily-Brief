@@ -20,13 +20,7 @@
                 <h3 class="dancing">from the desk of Change.org and Code for America</h3>
             </div>
             <div id="events">
-                <div class="event">
-                    <div class="event_image"></div>
-                    <h3 class="goudy event_info">
-                        Obama speaks at the US Chamber of Commerce Obama speaks at the US Chamber of Commerce
-                        <span class="tag">Federal</span><span class="tag">Employment</span><span id="urgency_tag">13 hours</span><span class="map"></span> 
-                    </h3>
-               </div>
+              <%= render :partial => "item", :collection => @items %>
             </div>
         </div>
         <div id="manilla_opening">
@@ -92,7 +86,7 @@
 
                     map = new google.maps.Map(document.getElementById("map_canvas"),
             mapOptions);
-          
+
                 marker = new google.maps.Marker({
                   map:map,
                   draggable:true,
@@ -115,7 +109,7 @@
 
             $('.map').click(function(e){ //used to be mouseover
                 //var loc_position = $('.map').position();
-                
+
                 $('#map_tooltip').html('<div id="map_canvas" style="width: 200px; height: 150px;">map div</div><div id="map_close">Close</div>');
                 $('#map_tooltip').css({
                     //top: ((e.offsetY || e.layerY) - 60) + "px",
