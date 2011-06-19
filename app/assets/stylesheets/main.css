@@ -116,8 +116,14 @@ ul.brief_list li{
 	margin: 10px;
 }
 .event_info {
+	width: 655px;
+	margin-left: 95px;
+}
+.event_title {
     display: block;
     padding-top: 20px;
+}
+.event_details {
 }
 .tag {
 	font-size:11px;
