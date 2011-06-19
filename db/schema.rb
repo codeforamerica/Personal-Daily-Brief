@@ -17,9 +17,9 @@ ActiveRecord::Schema.define(:version => 5) do
     t.datetime "updated_at"
     t.datetime "occurs_at"
     t.string   "title"
-    t.string   "description"
-    t.decimal  "lat",         :precision => 16, :scale => 14
-    t.decimal  "lng",         :precision => 17, :scale => 14
+    t.string   "description", :limit => 4096
+    t.decimal  "lat",                         :precision => 16, :scale => 14
+    t.decimal  "lng",                         :precision => 17, :scale => 14
     t.string   "room"
     t.string   "address"
     t.string   "city"
