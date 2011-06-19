@@ -1,3 +1,4 @@
 <div class="brief_topic">
-  <input type="checkbox" name="<%= interest.name.tr(' ', '_').downcase %>" value="<%= interest.name %>" /><span class="tag large"><%= interest.name %></span>
+  <input type="checkbox" id="<%= interest.snake_name %>" name="<%= interest.snake_name %>" value="<%= interest.name %>" />
+  <label for="<%= interest.snake_name %>" class="tag large"><%= interest.name %></label>
 </div>

@@ -9,6 +9,13 @@ class CreateUsers < ActiveRecord::Migration
       t.string :sms_number
       t.string :facebook_id
       t.string :twitter_id
+      t.string :address
+      t.string :city
+      t.string :state
+      t.string :country
+      t.string :postal_code
+      t.decimal :lat, :precision => 16, :scale => 14
+      t.decimal :lng, :precision => 17, :scale => 14
     end
 
     add_index :users, :email

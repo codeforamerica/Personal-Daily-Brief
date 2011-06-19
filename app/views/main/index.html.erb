@@ -11,7 +11,7 @@
         <title>Main Page</title>
     </head>
     <body>
-        <div id="brief">
+        <div id="brief" class="brief_open">
             <div id="map_tooltip" style="display:none;"></div>
             <div id="map_canvas" style="width: 200px; height: 150px; display:none;">map div</div>
             <div id="map_close" style="display:none;">Close</div>
@@ -23,11 +23,11 @@
               <%= render :partial => "item", :collection => @items %>
             </div>
         </div>
-        <div id="manilla_opening">
+        <div id="manilla_opening" class="manilla_closed_bottom">
         </div>
-        <div id="manilla_flap">
+        <div id="manilla_flap" class="manilla_closed_bottom">
         </div>
-        <div id="manilla">
+        <div id="manilla" class="manilla_closed">
             <div id="select_topics">
                 <div class="manilla_title">Brief Me On</div>
                 <form>
@@ -50,9 +50,10 @@
                     </form>
                     <h5 class="field_info">We will notify you at the addresses above when<br>new bulletins are added to your brief.</h5>
                 </div>
-            </div>
-            <div id="save_settings">
-                Save
+                </div>
+                <div id="save_settings">
+                    Save
+                </div>
             </div>
         </div>
         <!-- adding jQuery and jQuery UI -->
