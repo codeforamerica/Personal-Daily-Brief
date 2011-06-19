@@ -110,13 +110,13 @@ ul.brief_list li{
 }
 #manilla_opening {
 	background-image: url('manilla_f.png');
-	height: 257px;
+	height: 230px;
 	z-index: 1;
 }
 #manilla_flap {
 	background-image: url('manilla_b.png');
 	z-index: -1;
-	height: 257px;
+	height: 230px;
 }
 #manilla {
 	background-image: url('manilla_splice.png');
