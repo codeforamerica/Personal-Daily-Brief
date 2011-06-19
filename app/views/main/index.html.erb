@@ -41,17 +41,28 @@
         <div id="manilla">
             <div id="select_topics">
                 <div class="manilla_title">Brief Me On</div>
+                <div id="brief_topics">
+                    Environmental Causes
+                </div>
             </div>
             <div id="select_delivery">
                 <div class="manilla_title">Deliver My Brief</div>
                 <div>
-                    <form>
-                        <input type="text" name="email" class="" title="Email"/>
-                        <input type="text" name="sms" class="" title="SMS"/>
-                        <input type="text" name="twitter" class="" title="Twitter"/>
-                        
+                    <form id="delivery_methods">
+                        <div id="email_delivery">
+                            <input type="text" name="email" class="label_me" title="Email"/>
+                            <!-- <span class="save_delivery"></span> -->
+                        </div>
+                        <div id="sms_delivery">
+                            <input type="text" name="sms" class="label_me" title="SMS"/>
+                            <!-- <span class="save_delivery"></span> -->
+                        </div>
+                        <div id="twitter_delivery">
+                            <input type="text" name="twitter" class="label_me" title="Twitter"/>
+                            <!-- <span class="save_delivery"></span> -->
+                        </div>
                     </form>
-                    <img src="twitter_signin.png">
+                    <h5 class="field_info">We will notify you at the addresses above when<br>new bulletins are added to your brief.</h5>
                 </div>
             </div>
         </div>
@@ -111,6 +122,25 @@
                     $('#map_tooltip').hide();
                 });
             });
+            //Puts field title in form field
+        	$('.label_me').each(function() {
+        		$thisInput = $(this);
+        		if ($thisInput.val() == '') {
+        			$thisInput.val($thisInput.attr('title'));
+        		}
+
+        		$thisInput.focus(function() {
+        			if ($(this).val() === $(this).attr('title')) {
+        				$(this).val('').addClass('focused');
+        			}
+        		});
+
+        		$thisInput.blur(function() {
+        			if ($(this).val() === '') {
+        				$(this).val($(this).attr('title')).removeClass('focused');
+        			}
+        		});
+        	});
         </script>
     </body>
 </html>
