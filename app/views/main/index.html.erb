@@ -10,6 +10,7 @@
     <body>
         <div id="brief">
             <div id="map_tooltip" style="display:none;"></div>
+            <div id="map_canvas" style="width: 200px; height: 200px; display:none;">map div</div>
             <h1 class="title">Scott's Daily Brief<hr></h1>
             <div id="events">
                 <div id="event">
@@ -41,11 +42,45 @@
         <!-- adding jQuery and jQuery UI -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <script>
-            $('.map').mouseover(function(e){
+            var map, marker;
+            var sf = new google.maps.LatLng(37.72, -122.5);
+
+            function initialize() {
+                var mapOptions = {
+                zoom: 12,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                center: sf
+                };
+
+                    map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
+          
+                marker = new google.maps.Marker({
+                  map:map,
+                  draggable:true,
+                  animation: google.maps.Animation.DROP,
+                  position: sf
+                });
+                google.maps.event.addListener(marker, 'click', toggleBounce);
+              }
+
+              function toggleBounce() {
+
+                if (marker.getAnimation() != null) {
+                  marker.setAnimation(null);
+                } else {
+                  marker.setAnimation(google.maps.Animation.BOUNCE);
+                }
+              }
+
+          $('.map').toggle(function(){
+
+            $('.map').click(function(e){ //used to be mouseover
                 var loc_position = $('.map').position();
                 
-                $('#map_tooltip').html('Google Map here');
+                $('#map_tooltip').html('<div id="map_canvas" style="width: 200px; height: 200px;">map div</div>');
                 $('#map_tooltip').css({
                     //top: ((e.offsetY || e.layerY) - 60) + "px",
                    //left: ((e.offsetX || e.layerX) + 22) + "px"
@@ -53,10 +88,12 @@
                     left:loc_position.left - .5*$('#map_tooltip').width()
                 });
                 $('#map_tooltip').show();
+                initialize();
             });
-
-            $('.map').mouseout(function(e){
-                $('#map_tooltip').hide();
+            }, function() {
+                $('body').click(function(e){ //fix this interaction
+                    $('#map_tooltip').hide();
+                });
             });
         </script>
     </body>
