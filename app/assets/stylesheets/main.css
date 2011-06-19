@@ -123,22 +123,12 @@ ul.brief_list li{
     display: block;
     padding-top: 20px;
 }
-<<<<<<< HEAD
 .event_details {
 }
-=======
-
 .event_description{
     font-size: 14px;
     font-family: helvetica, arial, clean, sans-serif;
-    width: 400px;
 }
-
-.inner_description{
-    width: 400px;
-}
-
->>>>>>> f2e015c1d710294e3d49d69b7a190629a18b7a3f
 .tag {
 	font-size:11px;
 	font-family: helvetica, arial, clean, sans-serif;
