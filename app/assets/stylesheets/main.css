@@ -106,12 +106,10 @@ ul.brief_list li{
 	width: 75px;
 	color: white;
 	border-radius: 3px;
-	background: url('http://farm4.static.flickr.com/3107/2747264707_623c22a357_s.jpg') no-repeat;
 	border: 1px 1px 0px 1px solid #b5b5b5;
 	-moz-box-shadow: 0px 1px 4px 0px #000;
 	-webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,.4);
 	box-shadow: 0px 2px 4px 0px rgba(0,0,0,.4);
-	
 	float: left;
 	margin: 10px;
 }
@@ -122,8 +120,6 @@ ul.brief_list li{
 .event_title {
     display: block;
     padding-top: 20px;
-}
-.event_details {
 }
 .event_description{
     font-size: 14px;

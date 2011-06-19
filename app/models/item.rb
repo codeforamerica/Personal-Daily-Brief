@@ -1,4 +1,5 @@
 class Item < ActiveRecord::Base
+  attr_accessor :photo
   include Geokit::Geocoders
 
   has_many :item_topics, :class_name => 'ItemTopic'

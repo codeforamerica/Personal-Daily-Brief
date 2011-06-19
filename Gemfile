@@ -5,6 +5,7 @@ gem 'rails', '3.1.0.rc4'
 gem 'congress'
 gem 'jquery-rails'
 gem 'geokit'
+gem 'flickr_fu'
 gem 'uglifier'
 
 group :development, :test do

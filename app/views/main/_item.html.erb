@@ -1,5 +1,5 @@
 <div class="event">
-  <div class="event_image"></div>
+  <img src="<%= item.photo %>" class="event_image" />
   <div class="event_info">
     <h3 class="goudy event_title">
       <%= item.title %>
@@ -9,7 +9,7 @@
     </h3>
     <div class="event_details">
       <div class="event_description">
-        This is a description of the event listed above. This is a description of the event listed above. This is a description of the event listed above. This is a description of the event listed above. This is a description of the event listed above. This is a description of the event listed above. This is a description of the event listed above. This is a description of the event listed above. This is a description of the event listed above. This is a description of the event listed above. This is a description of the event listed above. This is a description of the event listed above.
+        <%= item.description %>
       </div>
       <div class="event_actions">
         HERE I CAN TAKE ACTION ON THIS EVENT
