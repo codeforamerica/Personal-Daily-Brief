@@ -9,4 +9,8 @@ class Topic < ActiveRecord::Base
       find(:first, :offset => rand(c))
     end
   end
+
+  def snake_name
+    name.tr(' ', '_').downcase
+  end
 end
