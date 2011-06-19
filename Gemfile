@@ -2,9 +2,9 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.0.rc4'
 
-# Asset template engines
-gem 'uglifier'
+gem 'congress'
 gem 'jquery-rails'
+gem 'uglifier'
 
 group :development, :test do
   gem 'sqlite3'

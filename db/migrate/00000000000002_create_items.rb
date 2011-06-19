@@ -5,8 +5,8 @@ class CreateItems < ActiveRecord::Migration
       t.datetime :occurs_at
       t.string :title
       t.string :description
-      t.decimal :lat, :null => false, :precision => 16, :scale => 14
-      t.decimal :lng, :null => false, :precision => 17, :scale => 14
+      t.decimal :lat, :precision => 16, :scale => 14
+      t.decimal :lng, :precision => 17, :scale => 14
       t.string :room
       t.string :address
       t.string :city
