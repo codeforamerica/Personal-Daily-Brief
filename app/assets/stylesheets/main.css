@@ -16,7 +16,7 @@ h2 {
 	font-size: 2em;
 }
 h3 {
-	font-size: 1.5em;
+	font-size: 1.4em;
 }
 h4 {
 	font-size: 1em;
@@ -99,17 +99,22 @@ ul.brief_list li{
 	width: 75px;
 	color: white;
 	border-radius: 3px;
-	background: url('http://farm4.static.flickr.com/3107/2747264707_623c22a357_s.jpg');
+	background: url('http://farm4.static.flickr.com/3107/2747264707_623c22a357_s.jpg') no-repeat;
 	border: 1px 1px 0px 1px solid #b5b5b5;
 	-moz-box-shadow: 0px 1px 4px 0px #000;
 	-webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,.4);
 	box-shadow: 0px 2px 4px 0px rgba(0,0,0,.4);
+	
+	float: left;
+	margin: 10px;
 }
 .event_info {
-	
+    display: block;
+    padding-top: 20px;
 }
 .tag {
 	font-size:11px;
+	font-family: helvetica, arial, clean, sans-serif;
 	width: 70px;
 	height:12px;
 	background: rgba(184,195,207,.6);
@@ -131,6 +136,7 @@ ul.brief_list li{
 }
 #urgency_tag{
     font-size: 12px;
+    font-family: helvetica, arial, clean, sans-serif;
     font-weight: bold;
     margin-left: 7px;
 }
