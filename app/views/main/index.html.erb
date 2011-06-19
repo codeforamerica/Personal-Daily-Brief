@@ -43,10 +43,14 @@
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
         <script>
             $('.map').mouseover(function(e){
+                var loc_position = $('.map').position();
+                
                 $('#map_tooltip').html('Google Map here');
                 $('#map_tooltip').css({
-                    top: ((e.offsetY || e.layerY) - 60) + "px",
-                    left: ((e.offsetX || e.layerX) + 22) + "px"
+                    //top: ((e.offsetY || e.layerY) - 60) + "px",
+                   //left: ((e.offsetX || e.layerX) + 22) + "px"
+                    top:loc_position.top - 60, //***this doesn't update***
+                    left:loc_position.left - .5*$('#map_tooltip').width()
                 });
                 $('#map_tooltip').show();
             });
