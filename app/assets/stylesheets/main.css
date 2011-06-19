@@ -109,8 +109,8 @@ ul.brief_list li{
 	left: 50%;
 }
 #manilla_opening {
-	background-image: url('manilla_f.png');
-	height: 230px;
+	background-image: url('manilla_fs.png');
+	height: 89px;
 	z-index: 1;
 }
 #manilla_flap {
