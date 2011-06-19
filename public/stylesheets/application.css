@@ -44,9 +44,7 @@ ul.topic_list{
 	width: 150px;
 	margin: 10px 10px 0 0;
 }
-#delivery{
-    
-}
+
 ul.brief_list li{
 	display: inline;
 	padding: 0px 10px 0px 0px;
@@ -59,18 +57,23 @@ ul.brief_list li{
 	line-height: 0px;
 	color: #353535;
 }
+
+#event{
+    padding: 20px;
+}
+
 #tag{
 	font-size:11px;
 	display: block;
 	width: 70px;
 	height:12px;
-	float: right;
+    float: right;
 	background: rgba(184,195,207,.6);
 	text-align: center;
 	padding: 3px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-	margin-right: 5px;
+	margin-right: 100px;
 }
 
 #manilla_opening, #manilla_flap {
