@@ -73,6 +73,12 @@ ul.brief_list li{
 	margin-left: 7px;
 }
 
+#urgency_tag{
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 7px;
+}
+
 #manilla_opening, #manilla_flap {
 	background-repeat: no-repeat;
 	display: block;
