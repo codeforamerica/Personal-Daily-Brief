@@ -171,7 +171,6 @@ ul.brief_list li{
 #manilla_opening, #manilla_flap {
 	background-repeat: no-repeat;
 	display: block;
-	bottom: 350px;
 	left:0;
 	position: fixed;
 	margin-left: -480px;
@@ -188,11 +187,14 @@ ul.brief_list li{
 	z-index: -1;
 	height: 230px;
 }
+.manilla_open_bottom {
+	bottom: 400px;
+}
+.manilla_closed_bottom {
+	bottom: 15px;
+}
 #manilla {
 	background-image: url('manilla_splice.png');
-	min-height: 350px;
-	display: block;
-	bottom: 0;
 	left:0;
 	position: fixed;
 	width: 960px;
@@ -200,6 +202,7 @@ ul.brief_list li{
 	left: 50%;
 	z-index: 1;
 	background-repeat:repeat-y;
+	bottom: 0px;
 }
 .manilla_open {
 	height: 400px;
