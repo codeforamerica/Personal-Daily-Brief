@@ -81,7 +81,7 @@ ul.brief_list li{
 #event{
     padding: 20px;
 }
-#tag{
+.tag{
 	font-size:11px;
 	width: 70px;
 	height:12px;
