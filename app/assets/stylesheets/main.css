@@ -1,6 +1,6 @@
 body {
 	font-family: helvetica, arial, clean, sans-serif;
-	background-image: url('../images/wood.jpg');
+	background-image: url('wood.jpg');
 	background-repeat: repeat;
 	background-position: 0px 0px;
 	background-attachment: fixed;
@@ -17,7 +17,7 @@ body a{
 	visibility: hidden;
 }
 #brief{
-	background-image: url('../images/exclusive_paper.png');
+	background-image: url('exclusive_paper.png');
 	background-repeat: repeat;
 	margin-left: -425px;
 	left: 50%;
@@ -84,17 +84,17 @@ ul.brief_list li{
 	left: 50%;
 }
 #manilla_opening {
-	background-image: url('../images/manilla_f.png');
+	background-image: url('manilla_f.png');
 	height: 257px;
 	z-index: 1;
 }
 #manilla_flap {
-	background-image: url('../images/manilla_b.png');
+	background-image: url('manilla_b.png');
 	z-index: -1;
 	height: 257px;
 }
 #manilla {
-	background-image: url('../images/manilla_splice.png');
+	background-image: url('manilla_splice.png');
 	height: 15px;
 	display: block;
 	bottom: 0;
