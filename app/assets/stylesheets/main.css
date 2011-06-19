@@ -33,6 +33,8 @@ body a{
 	-moz-box-shadow: 0px 0px 15px 1px #000;
 	-webkit-box-shadow: 0px 0px 15px 1px #000;
 	box-shadow: 0px 0px 15px 1px #000;
+	color: #353535;
+	text-shadow: white 0px 1px 0px;
 }
 ul{
 	list-style-type:none;
@@ -101,7 +103,7 @@ ul.brief_list li{
 #manilla_opening, #manilla_flap {
 	background-repeat: no-repeat;
 	display: block;
-	bottom: 15px;
+	bottom: 350px;
 	left:0;
 	position: fixed;
 	margin-left: -480px;
@@ -109,7 +111,7 @@ ul.brief_list li{
 	left: 50%;
 }
 #manilla_opening {
-	background-image: url('manilla_fs.png');
+	background-image: url('manilla_fs2.png');
 	height: 89px;
 	z-index: 1;
 }
@@ -120,7 +122,7 @@ ul.brief_list li{
 }
 #manilla {
 	background-image: url('manilla_splice.png');
-	height: 15px;
+	height: 350px;
 	display: block;
 	bottom: 0;
 	left:0;
@@ -130,4 +132,38 @@ ul.brief_list li{
 	left: 50%;
 	z-index: 1;
 	background-repeat:repeat-y;
+}
+#select_topics, #select_delivery {
+	width: 430px;
+	position: relative;
+}
+#select_topics {
+	float: left;
+	margin-left: 30px;
+}
+#select_delivery {
+	float: right;
+	margin-right: 30px;
+}
+input {
+	display: block;
+	font-size: 25px;
+	border-radius: 20px;
+	background-color:rgba(0,0,0,.5);
+	width: 410px;
+	padding: 8px 12px 10px 12px;
+	margin-bottom: 10px;
+	border: none;
+	color: #ececec;
+}
+input:focus {
+	outline: none;
+	background-color: #65A98B;
+}
+.manilla_title {
+	font-size: 50px;
+	text-shadow: white 0px 1px 0px;
+	text-align: center;
+	font-family: 'Waiting for the Sunrise', serif;
+	letter-spacing: -0.05em;
 }
