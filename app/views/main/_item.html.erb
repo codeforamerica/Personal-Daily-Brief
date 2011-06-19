@@ -11,8 +11,15 @@
       <div class="event_description">
         <%= item.description %>
       </div>
-      <div class="event_actions">
-        HERE I CAN TAKE ACTION ON THIS EVENT
+      <div class="event_description">
+        <dl>
+          <dt>Call your Congressperson</dt>
+          <dd>202-225-4965</dd>
+          <dt>Add to Calendar</dt>
+          <dd><a href="#"><img src="/assets/gc_button1.gif" /></a></dd>
+          <dt>Tweet it</dt>
+          <dd><a href="http://twitter.com?status=<%= item.title %>"><img src="/assets/tweetn.png" /></a></dd>
+        </dl>
       </div>
     </div>
   </div>
