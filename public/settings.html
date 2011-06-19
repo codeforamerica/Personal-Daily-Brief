@@ -7,8 +7,12 @@
     <style>
         body {
             font-family: helvetica, arial, clean, sans-serif;
+            background-image: url(images/wood.jpg);
+            background-repeat: repeat;
+            background-position: 0px 0px;
+            background-attachment: fixed;
+            background-color: #73390F;
         }
-
         body a{
             text-decoration: none;
         }
@@ -23,11 +27,18 @@
         #container{
             margin-left: auto;
             margin-right: auto;
-            width: 920px;
+            width: 960px;
+        }
+        #manilla_top {
+            background-image: url('images/manilla.png');
+            height: 222px;
+            margin-bottom: 0px;
         }
         #topics{
             font-size: 16px;
             clear: auto;
+            background-image: url('images/manilla_splice.png');
+            margin-top: 0px;
         }
 
         ul{
@@ -56,13 +67,13 @@
     </style>
     <body>
         <div id="container">
-            <h1>
-                Settings
-            </h1>
+            <div id="manilla_top">
+              <h1>
+                  Settings
+              </h1>
+            </div>
             <div id="topics" class="clearfix">
-                <h2>
-                Brief me on
-                </h2>
+                
                 <ul class="topic_list">
                     <li><a href="Politics">Politics</a></li>
                     <li><a href="Environment">The Environment</a></li>
