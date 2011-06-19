@@ -111,7 +111,7 @@ ul.brief_list li{
 	-moz-box-shadow: 0px 1px 4px 0px #000;
 	-webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,.4);
 	box-shadow: 0px 2px 4px 0px rgba(0,0,0,.4);
-
+	
 	float: left;
 	margin: 10px;
 }
@@ -135,6 +135,7 @@ ul.brief_list li{
 	font-family: helvetica, arial, clean, sans-serif;
 	width: 70px;
 	height:12px;
+	background: rgba(184,195,207,.6);
 	text-align: center;
 	padding: 3px;
 	-moz-border-radius: 4px;
