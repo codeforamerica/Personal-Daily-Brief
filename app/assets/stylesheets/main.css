@@ -109,8 +109,12 @@ ul.brief_list li{
 	margin: 10px;
 }
 .event_info {
+<<<<<<< HEAD
     display: block;
     padding-top: 20px;
+=======
+
+>>>>>>> b615760b72bc33d5f6dd9feb52da67ce5ad471ec
 }
 .tag {
 	font-size:11px;
@@ -144,7 +148,7 @@ ul.brief_list li{
 .map{
     padding: 0px 10px 0px 5px;
 	margin-left: 7px;
-	background: url(icons/pin_map_icon&16.png) no-repeat;
+	background: url(icons/pin_map_icon_16.png) no-repeat;
 }
 
 #map_tooltip {
@@ -228,7 +232,7 @@ input[type="text"] {
 	clear: both;
 }
 input[type="checkbox"] {
-	background: url(icons/checkbox_unchecked_icon&24.png) no-repeat;
+	background: url(icons/checkbox_unchecked_icon_24.png) no-repeat;
 }
 input:focus {
 	outline: none;
@@ -254,13 +258,13 @@ input:focus {
 	padding-left: 65px;
 }
 #email_delivery {
-	background-image: url('icons/mail_2_icon&48.png');
+	background-image: url('icons/mail_icon_48.png');
 }
 #sms_delivery {
-	background-image: url('icons/phone_2_icon&48.png');
+	background-image: url('icons/phone_icon_48.png');
 }
 #twitter_delivery {
-	background-image: url('icons/twitter_icon&48.png');
+	background-image: url('icons/twitter_icon_48.png');
 }
 #save_settings {
 	background-image: url('exclusive_paper.png');
