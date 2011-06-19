@@ -1,4 +1,4 @@
 <div class="brief_topic">
   <input type="checkbox" id="<%= interest.snake_name %>" name="<%= interest.snake_name %>" value="<%= interest.name %>" />
-  <label for="<%= interest.snake_name %>" class="tag large"><%= interest.name %></label>
+  <label for="<%= interest.snake_name %>" class="tag large" style="background-color: rgba(<%= (interest.rgb_color << 0.2).join(', ') %>);"><%= interest.name %></label>
 </div>

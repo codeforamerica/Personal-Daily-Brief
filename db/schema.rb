@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(:version => 5) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
+    t.string   "color"
   end
 
   create_table "users", :force => true do |t|
