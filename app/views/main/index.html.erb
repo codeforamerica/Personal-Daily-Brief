@@ -14,6 +14,7 @@
         <div id="brief">
             <div id="map_tooltip" style="display:none;"></div>
             <div id="map_canvas" style="width: 200px; height: 200px; display:none;">map div</div>
+            <div id="map_close" style="display:none;">Close</div>
             <div class="title">
                 <h1 class="quattro upper">Scott's Daily Brief</h1>
                 <h3 class="dancing">from the desk of Change.org and Code for America</h3>
@@ -125,26 +126,30 @@
                 }
               }
 
-          $('.map').toggle(function(){
+          //$('.map').toggle(function(){
 
             $('.map').click(function(e){ //used to be mouseover
-                var loc_position = $('.map').position();
+                //var loc_position = $('.map').position();
                 
-                $('#map_tooltip').html('<div id="map_canvas" style="width: 200px; height: 200px;">map div</div>');
+                $('#map_tooltip').html('<div id="map_canvas" style="width: 200px; height: 200px;">map div</div><div id="map_close">Close</div>');
                 $('#map_tooltip').css({
                     //top: ((e.offsetY || e.layerY) - 60) + "px",
                    //left: ((e.offsetX || e.layerX) + 22) + "px"
-                    top:loc_position.top - 60, //***this doesn't update***
-                    left:loc_position.left - .5*$('#map_tooltip').width()
+                    //top:loc_position.top - 120, //***this doesn't update***
+                    //left:loc_position.left - .5*$('#map_tooltip').width()
+                    top: e.layerY - 260,
+                    left: e.layerX - 100
                 });
                 $('#map_tooltip').show();
                 initialize();
-            });
-            }, function() {
-                $('body').click(function(e){ //fix this interaction
+
+                $('#map_close').click(function(e){
                     $('#map_tooltip').hide();
                 });
             });
+            //}, function() {
+
+            //});
             //Puts field title in form field
         	$('.label_me').each(function() {
         		$thisInput = $(this);

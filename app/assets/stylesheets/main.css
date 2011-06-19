@@ -109,12 +109,8 @@ ul.brief_list li{
 	margin: 10px;
 }
 .event_info {
-<<<<<<< HEAD
     display: block;
     padding-top: 20px;
-=======
-
->>>>>>> b615760b72bc33d5f6dd9feb52da67ce5ad471ec
 }
 .tag {
 	font-size:11px;
@@ -159,11 +155,17 @@ ul.brief_list li{
       border-radius: 4px;
       z-index: 10;
       background: rgba(255,255,255,.9);
-      padding: 15px;
+      padding: 15px 15px 5px 15px;
       border: 0px solid #ddd;
       position: absolute;
       font-family:"Helvetica Neue", Arial, Helvetica, sans-serif
-  }
+}
+
+#map_close{
+    font-size: 12px;
+    float: right;
+    padding-top: 3px;
+}
 
 #manilla_opening, #manilla_flap {
 	background-repeat: no-repeat;
