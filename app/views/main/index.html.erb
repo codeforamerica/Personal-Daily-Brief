@@ -5,6 +5,8 @@
         <link rel="stylesheet" type="text/css" href="stylesheets/application.css" />
         <link href='http://fonts.googleapis.com/css?family=Quattrocento&v1' rel='stylesheet' type='text/css'>
         <link  href="http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise:regular&v1" rel="stylesheet" type="text/css" >
+        <link href='http://fonts.googleapis.com/css?family=Dancing+Script:regular,bold&v1' rel='stylesheet' type='text/css'>
+        <link  href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911:regular&v1" rel="stylesheet" type="text/css" >
         <meta charset="utf-8" />
         <title>Main Page</title>
     </head>
@@ -12,26 +14,36 @@
         <div id="brief">
             <div id="map_tooltip" style="display:none;"></div>
             <div id="map_canvas" style="width: 200px; height: 200px; display:none;">map div</div>
-            <h1 class="title">Scott's Daily Brief<hr></h1>
+            <div class="title">
+                <h1 class="quattro upper">Scott's Daily Brief</h1>
+                <h3 class="dancing">from the desk of Change.org and Code for America</h3>
+            </div>
             <div id="events">
-                <div id="event">
-                    Obama speaks at the US Chamber of Commerce<span class="tag">Federal</span><span class="tag">Employment</span><span id="urgency_tag">13 hours</span><span class="map">Location</span>
+                <div class="event">
+                    <div class="event_image"></div>
+                    <h3 class="goudy left">
+                        Obama speaks at the US Chamber of Commerce Obama speaks at the US Chamber of Commerce
+                        
+                    </h3>
+                    <span class="event_info">
+                        <span class="tag">Federal</span><span class="tag">Employment</span><span id="urgency_tag">13 hours</span><span class="map"></span>
+                    </span>
                </div>
-               <div id="event">
-                    Congressional hearing on federal stimulus<span class="tag">Federal</span><span class="tag">Economy</span><span id="urgency_tag">2 days</span><span class="map">Location</span>
-               </div>
-               <div id="event">
-                    Ben Bernanke addresses the US Chamber of Commerce<span class="tag">Federal</span><span class="tag">Employment</span><span id="urgency_tag">3 days</span><span class="map">Location</span>
-               </div>
-              <div id="event">
-                    Testimony on feasibility of high-speed rail<span class="tag">State</span><span class="tag">Transportation</span><span id="urgency_tag">6 days</span><span class="map">Location</span>
-               </div>
-              <div id="event">
-                    Congressional debate on emissions standards<span class="tag">Federal</span><span class="tag">Environment</span><span id="urgency_tag">10 days</span><span class="map">Location</span>
-               </div>
-              <div id="event">
-                    Tesla news conference on battery technology<span class="tag">State</span><span class="tag">Technology</span><span id="urgency_tag">2 weeks</span><span class="map">Location</span>
-               </div>
+               <!-- <div class="event">
+                                   Congressional hearing on federal stimulus<span class="tag">Federal</span><span class="tag">Economy</span><span id="urgency_tag">2 days</span><span class="map">Location</span>
+                              </div>
+                              <div class="event">
+                                   Ben Bernanke addresses the US Chamber of Commerce<span class="tag">Federal</span><span class="tag">Employment</span><span id="urgency_tag">3 days</span><span class="map">Location</span>
+                              </div>
+                             <div class="event">
+                                   Testimony on feasibility of high-speed rail<span class="tag">State</span><span class="tag">Transportation</span><span id="urgency_tag">6 days</span><span class="map">Location</span>
+                              </div>
+                             <div class="event">
+                                   Congressional debate on emissions standards<span class="tag">Federal</span><span class="tag">Environment</span><span id="urgency_tag">10 days</span><span class="map">Location</span>
+                              </div>
+                             <div class="event">
+                                   Tesla news conference on battery technology<span class="tag">State</span><span class="tag">Technology</span><span id="urgency_tag">2 weeks</span><span class="map">Location</span>
+                              </div> -->
             </div>
         </div>
         <div id="manilla_opening">
@@ -46,16 +58,16 @@
                         <input type="checkbox" name="kittens" value="Save the Kittens" /><span class="tag large">Save the Kittens</span>
                     </div>
                     <div class="brief_topic">
-                    <input type="checkbox" name="kittens" checked="checked" value="whales" /><span class="tag large selected">Eat the Whales and Sell the Blubber</span>
+                        <input type="checkbox" name="kittens" checked="checked" value="whales" /><span class="tag large selected">Eat the Whales and Sell the Blubber</span>
                     </div>
                     <div class="brief_topic">
-                    <input type="checkbox" name="kittens" value="trees" /><span class="tag large">Shred the Trees</span>
+                        <input type="checkbox" name="kittens" value="trees" /><span class="tag large">Shred the Trees</span>
                     </div>
                     <div class="brief_topic">
-                    <input type="checkbox" name="kittens" value="babies" /><span class="tag large">Promote Creation of Babies</span>
+                        <input type="checkbox" name="kittens" value="babies" /><span class="tag large">Promote Creation of Babies</span>
                     </div>
                     <div class="brief_topic">
-                    <input type="checkbox" name="kittens" checked="checked" value="Save the Kittens" /><span class="tag large selected">Learn More about Highways</span>
+                        <input type="checkbox" name="kittens" checked="checked" value="Save the Kittens" /><span class="tag large selected">Learn More about Highways</span>
                     </div>
                 </form>
             </div>
@@ -65,19 +77,19 @@
                     <form id="delivery_methods">
                         <div id="email_delivery">
                             <input type="text" name="email" class="label_me" title="Email"/>
-                            <!-- <span class="save_delivery"></span> -->
                         </div>
                         <div id="sms_delivery">
                             <input type="text" name="sms" class="label_me" title="SMS"/>
-                            <!-- <span class="save_delivery"></span> -->
                         </div>
                         <div id="twitter_delivery">
                             <input type="text" name="twitter" class="label_me" title="Twitter"/>
-                            <!-- <span class="save_delivery"></span> -->
                         </div>
                     </form>
                     <h5 class="field_info">We will notify you at the addresses above when<br>new bulletins are added to your brief.</h5>
                 </div>
+            </div>
+            <div id="save_settings">
+                Save
             </div>
         </div>
         <!-- adding jQuery and jQuery UI -->
