@@ -201,6 +201,12 @@ ul.brief_list li{
 	z-index: 1;
 	background-repeat:repeat-y;
 }
+.manilla_open {
+	height: 400px;
+}
+.manilla_closed {
+	height: 15px;
+}
 #select_topics, #select_delivery {
 	width: 430px;
 	position: relative;
