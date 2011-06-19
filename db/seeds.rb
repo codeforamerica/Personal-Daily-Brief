@@ -18,9 +18,40 @@ Congress.committee_hearings.committee_hearings.each do |committee_hearing|
   item.country = 'USA'
   item.postal_code = '20004'
   item.topics = [Topic.random]
+  item.geocode
   item.save!
 end
 
-User.create(:first_name => "Erik", :last_name => "Michaels-Ober", :email => "erik@codeforamerica.org")
-User.create(:first_name => "Michael", :last_name => "Evans", :email => "michael@codeforamerica.org")
-User.create(:first_name => "Scott", :last_name => "Silverman", :email => "scott@codeforamerica.org")
+erik = User.new
+erik.first_name = "Erik"
+erik.last_name = "Michaels-Ober"
+erik.email = "erik@codeforamerica.org"
+erik.address = '139 Townsend Street'
+erik.city = 'San Francisco'
+erik.state = 'CA'
+erik.country = 'USA'
+erik.geocode
+erik.save!
+
+michael = User.new
+michael.first_name = "Michael"
+michael.last_name = "Evans"
+michael.email = "michael@codeforamerica.org"
+michael.address = '139 Townsend Street'
+michael.city = 'San Francisco'
+michael.state = 'CA'
+michael.country = 'USA'
+michael.geocode
+michael.save!
+
+scott = User.new
+scott.first_name = "Scott"
+scott.last_name = "Silverman"
+scott.email = "scott@codeforamerica.org"
+scott.save!
+scott.address = '139 Townsend Street'
+scott.city = 'San Francisco'
+scott.state = 'CA'
+scott.country = 'USA'
+scott.geocode
+scott.save!

@@ -51,6 +51,7 @@ GEM
       rack (>= 1.1.0, < 2)
     faraday_middleware (0.6.3)
       faraday (~> 0.6.0)
+    geokit (1.6.0)
     hashie (1.0.0)
     hike (1.1.0)
     i18n (0.6.0)
@@ -118,6 +119,7 @@ PLATFORMS
 
 DEPENDENCIES
   congress
+  geokit
   jquery-rails
   pg
   rails (= 3.1.0.rc4)
